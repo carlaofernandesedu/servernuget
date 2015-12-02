@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{33290A0E-4634-48EF-B961-4997AC687655}</ProjectGuid>
+    <ProjectGuid>{C151C472-03B1-4CBD-8FEC-5858F23EF2FE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -87,6 +87,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Producao.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="App_Readme\Elmah.txt" />
     <Content Include="DataServices\Packages.svc" />
     <Content Include="Default.aspx" />
@@ -97,16 +107,6 @@
   <ItemGroup>
     <Compile Include="DataServices\Routes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\Producao.pubxml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -121,7 +121,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1177</DevelopmentServerPort>
+          <DevelopmentServerPort>3794</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:1177/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
